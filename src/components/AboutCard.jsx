@@ -15,7 +15,8 @@ const AboutCard = ({ skills, features }) => {
         ))}
       </div>
 
-      <div className='mt-10 space-y-4'>
+      <div className='grid grid-cols-1 sm:grid-cols-2
+'>
         {features.map(({id, icon: Icon, iconBg, iconColor, title, desc}) => (
           <div key={id} className='h-17 w-83 bg-[#262626] p-2 flex'>
             <div className={`h-12 w-12 rounded-4xl p-3 ${iconBg}`}>

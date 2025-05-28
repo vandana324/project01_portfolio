@@ -1,35 +1,27 @@
-function ServicesData(){
-    return(
-        <>
-        <div className="w-120 h-90 bg-[#262626] rounded-xl">
-             
-             <h2 className="pt-20 text-center text-2xl text-white font-bold">Mobile App Development</h2>
-             <p className="pt-5 text-white text-base text-center">Cross-platform and native mobile applications with
-              <br /> beautiful UI and seamless performance.</p>
+const ServicesData = ({ icon, name, description, skill1, skill2, skill3, skill4 }) => {
+  return (
+    <div className="w-115 h-90 bg-[#262626] rounded-xl p-6 flex flex-col justify-start items-center">
+      <div className="text-pink-600 w-16 h-16 rounded-full flex items-center justify-center bg-[#8e6f84] shadow-pink-400 ">{icon}</div>
+      <h2 className="pt-4 text-2xl text-white font-bold text-center">{name}</h2>
+      <p className="pt-4 text-gray-400 text-base text-center">{description}</p>
 
-              
-       <div className="flex items-center pt-10 pl-4 pr-4 gap-2">
-          <div className="w-50 h-11 bg-[#3c3c3c] rounded-xl">
-            <h1 className="text-blue-400 text-base text-center pt-2 ">Flutter</h1>
-          </div>
-          <div className="w-50 h-11 bg-[#3c3c3c] rounded-xl">
-            <h1 className="text-pink-500 text-base text-center pt-2 ">React Native</h1>
-          </div>
-     
+      
+      <div className="grid grid-cols-2 gap-3 pt-6">
+        <div className="w-50 h-11 bg-[#3c3c3c] rounded-xl flex items-center justify-center">
+          <h1 className="text-blue-500 text-base">{skill1}</h1>
         </div>
-
-         <div className="flex items-center pt-3 pl-4 pr-4 gap-2">
-          <div className="w-50 h-11 bg-[#3c3c3c] rounded-xl">
-            <h1 className="text-blue-400 text-base text-center pt-2 ">Java</h1>
-          </div>
-          <div className="w-50 h-11 bg-[#3c3c3c] rounded-xl">
-            <h1 className="text-pink-500 text-base text-center pt-2 ">Kotlin</h1>
-          </div>
-          
+        <div className="w-50 h-11 bg-[#3c3c3c] rounded-xl flex items-center justify-center">
+          <h1 className="text-pink-500 text-base">{skill2}</h1>
         </div>
-          </div>
-        </>
-    );
-}
+        <div className="w-50 h-11 bg-[#3c3c3c] rounded-xl flex items-center justify-center">
+          <h1 className="text-blue-500 text-base">{skill3}</h1>
+        </div>
+        <div className="w-50 h-11 bg-[#3c3c3c] rounded-xl flex items-center justify-center">
+          <h1 className="text-pink-500 text-base">{skill4}</h1>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default ServicesData
+export default ServicesData;
