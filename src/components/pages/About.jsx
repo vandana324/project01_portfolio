@@ -1,6 +1,8 @@
 import React from 'react'
 import AboutCard from '../AboutCard'
 import { Briefcase, Zap, Lightbulb, Clock } from "lucide-react";
+import Line from '../others/line';
+import Home from './Home';
 
 const skillsData = [
   { id: 1, bgColor: 'bg-[#3F4E66]', letterColor: 'text-[#3A83F7]', letter: 'F', name: 'Flutter' },
@@ -20,11 +22,13 @@ const featuresData = [
 
 const About = () => {
   return (
-    <div>
-      <div className=' pt-10 w-full min-h-screen bg-[#262626]'>
+    
+    <section id="about">
+      <div className='px-4 pt-10 w-full min-h-screen bg-[#262626]'>
         {/* top portion */}
         <div className='h-[140px] w-full bg-[#262626] flex flex-col justify-center items-center'>
           <h1 className='text-white text-4xl font-semibold '>About Me</h1>
+          <Line />
           <p className='text-[#D4D4C4] mt-2'>Get to know me better and see how I can help bring your digital ideas to life.</p>
         </div>
 
@@ -40,7 +44,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+   
+    </section>
   )
 }
 

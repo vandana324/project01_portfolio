@@ -1,27 +1,50 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    return (
-        <>
-            <nav className="fixed w-full bg-[#181818] text-white p-4 shadow-md p-4">
-                <div className="flex justify-between items-center">
-       
-        <div className="text-2xl font-bold bg-gradient-to-r from-[#4081FA] to-[#FA0472] bg-clip-text text-transparent leading-right">
-         <Link to="/Rahul" className="">Rahul Singh</Link>
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 bg-[#181818] text-white shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+        {/* Logo */}
+        <div className="text-2xl font-bold bg-gradient-to-r from-[#4081FA] to-[#FA0472] bg-clip-text text-transparent">
+          <Link to="/">Rahul Singh</Link>
         </div>
-      <div className="flex gap-5 font-small text-white text-lg text-base">
-        <Link to="/Home" className="hover:text-pink-600">Home</Link>
-        <Link to="/About" className="hover:text-pink-600">About</Link>
-        <Link to="/Services" className="hover:text-pink-600">Services</Link>
-        <Link to="/Projects" className="hover:text-pink-600">Projects</Link>
-        <Link to="/Team" className="hover:text-pink-600">Team</Link>
-        <Link to="/Testimonial" className="hover:text-pink-600">Testimonial</Link>
-        <Link to="/Contact" className="hover:text-pink-600">Contact</Link>
+
+        {/* Hamburger Button */}
+        <div className="lg:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-white text-xl focus:outline-none">
+            {isOpen ? '✕' : 'Menu'}
+          </button>
+        </div>
+
+        {/* Desktop Nav */}
+        <div className="hidden lg:flex gap-6 text-lg">
+          <Link to="/" className="hover:text-pink-600">Home</Link>
+          <a href="#about" className="hover:text-pink-600">About</a>
+          <a href="#services" className="hover:text-pink-600">Services</a>
+          <a href="#projects" className="hover:text-pink-600">Projects</a>
+          <a href="#team" className="hover:text-pink-600">Team</a>
+          <a href="#testimonial" className="hover:text-pink-600">Testimonial</a>
+          <a href="#contact" className="hover:text-pink-600">Contact</a>
+        </div>
       </div>
-      </div>
+
+      {/* Mobile Nav */}
+      {isOpen && (
+        <div className="lg:hidden px-4 pb-4 flex flex-col gap-4 text-lg bg-[#181818]">
+          <a href="#home" onClick={() => setIsOpen(false)} className="hover:text-pink-600">Home</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-pink-600">About</a>
+          <a href="#services" onClick={() => setIsOpen(false)} className="hover:text-pink-600">Services</a>
+          <a href="#projects" onClick={() => setIsOpen(false)} className="hover:text-pink-600">Projects</a>
+          <a href="#team" onClick={() => setIsOpen(false)} className="hover:text-pink-600">Team</a>
+          <a href="#testimonial" onClick={() => setIsOpen(false)} className="hover:text-pink-600">Testimonial</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="hover:text-pink-600">Contact</a>
+        </div>
+      )}
     </nav>
-        </>
-    );
+  );
 }
 
 export default Navbar;

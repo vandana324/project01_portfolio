@@ -1,6 +1,7 @@
 import ServicesData from "../others/ServicesData";
 import {Smartphone,Settings,ShoppingCart,MonitorSmartphone,Zap,LayoutTemplate} from "lucide-react";
 import Works from "../others/Works";
+import Line from "../others/line";
 
   const workSection = [
     {id:1,idx:'1',title:'Discovery',desc:'Understanding your requirements and project goals through in-depth consultations.'},
@@ -29,15 +30,17 @@ const features = [
 
 function Services() {
   return (
-    <div className="bg-[#181818] min-h-screen w-full px-10 pt-20">
+    <section id="services" >
+    <div className="bg-[#181818] min-h-screen w-full overflow-hidden px-10 py-25">
       <h1 className="text-center text-5xl text-white font-bold">Services</h1>
+      <Line />
       <p className="pt-7 text-white text-center text-base">
         Specialized services tailored to meet your digital needs with cutting-edge
         <br /> technologies and expert solutions.
       </p>
 
      
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 overflow-hidden">
         {features.map((item) => (
           <ServicesData
             key={item.id}
@@ -53,10 +56,10 @@ function Services() {
       </div>
 
 
-      <div className="pt-20">
+      <div className="py-15 overflow-hidden">
              <h1 className="text-white text-center font-bold text-3xl"> How We Works</h1>
 
-             <div className=" pt-20 flex flex-wrap justify-center gap-12">
+             <div className="pt-15 flex flex-wrap justify-center gap-12">
              {workSection.map((item) => (
               <Works 
               key={item.id}
@@ -70,7 +73,7 @@ function Services() {
      </div>
 
 
-    <div className="w-full py-20 flex flex-col items-center justify-center gap-6">
+    <div className="w-full py-10 flex flex-col items-center justify-center gap-6">
   <h1 className="text-white text-3xl text-center font-bold">
     Ready to bring your idea to life?
   </h1>
@@ -81,6 +84,7 @@ function Services() {
 </div>
 
     </div>
+    </section>
   );
 }
 

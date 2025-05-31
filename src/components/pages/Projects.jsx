@@ -1,6 +1,7 @@
 import { Camera, Settings,MessageCircle } from 'lucide-react';
 import ProjectCard from '../ProjectCard';
 import { FaMobileAlt, FaDesktop, FaDollarSign } from "react-icons/fa";
+import Line from '../others/line';
 
 const project = [
   {
@@ -73,10 +74,12 @@ const project = [
 
 const Projects = () => {
   return (
-     <section className="pt-20 px-6 bg-[#303030]">
+    <section id="projects" >
+     <section className="py-25 px-6 bg-[#303030]">
       <h1 className="text-white text-4xl font-bold text-center mb-3">
         Projects 
       </h1>
+      <Line />
       <p className="text-gray-400 text-center mb-10">
         Explore my latest work and see how I bring ideas to life with code and creativity.
       </p>
@@ -86,6 +89,7 @@ const Projects = () => {
           <ProjectCard key={item.id} {...item} />
         ))}
       </div>
+    </section>
     </section>
   );
 };
