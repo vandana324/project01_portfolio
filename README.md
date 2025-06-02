@@ -12,15 +12,15 @@ This is my personal portfolio website to showcase my skills, projects, and journ
 ## 🛠️ How to Run Locally
 
 
-->`git clone https://github.com/vandanaramawat/portfolio.git`
-->`cd portfolio`
-->`npm install`
-->`npm run dev`
-->`The app will run on http://localhost:3000`
+-> `git clone https://github.com/vandanaramawat/portfolio.git`
+-> `cd portfolio`
+-> `npm install`
+-> `npm run dev`
+-> `The app will run on http://localhost:3000`
 
 ## ✨ Features
--Responsive design for all devices
--Smooth animations and transitions
--Project showcase section
--About me, Skills, and Contact sections
--Clean and modern UI
+- Responsive design for all devices
+- Smooth animations and transitions
+- Project showcase section
+- About me, Skills, and Contact sections
+- Clean and modern UI
