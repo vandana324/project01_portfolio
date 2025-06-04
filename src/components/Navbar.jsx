@@ -9,7 +9,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold bg-gradient-to-r from-[#4081FA] to-[#FA0472] bg-clip-text text-transparent">
-          <Link to="/">Rahul Singh</Link>
+          <Link to="/">Vandana vaishnav</Link>
         </div>
 
         {/* Hamburger Button */}

@@ -55,9 +55,7 @@ const Testimonial = () => {
     <>
     <section id="testimonial" >
    <div className="bg-[#1e1e1e] min-h-screen flex flex-col justify-center items-center px-4 py-10">
-  <h1 className="text-white text-4xl font-bold text-center mb-3">
-    Testimonial
-  </h1>
+  <h1 className="text-white text-4xl font-bold text-center">Testimonial</h1>
   <Line />
   <p className="text-gray-400 text-center mb-10 max-w-xl">
     What our clients say about our expertise and delivered solutions.

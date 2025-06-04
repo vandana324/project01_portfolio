@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Line from '../others/line';
-import Footer from '../pages/Footer'
+
 
 const Contact = ({ contactInfo, socialLinks }) => {
   return (
@@ -22,9 +22,9 @@ const Contact = ({ contactInfo, socialLinks }) => {
             <h2 className="text-3xl font-bold mb-4">Contact Information</h2>
             <p className="mb-6 text-gray-300">Feel free to reach out to us through any of these channels. We're eager to hear about your project and how we can help.</p>
             <div className="space-y-4 text-gray-300">
-  <div className="flex items-center gap-3">📞+91 93342 74325</div>
-  <div className="flex items-center gap-3">📧 rk9600460@gmail.com</div>
-  <div className="flex items-center gap-3">📍 Delhi, India</div>
+  <div className="flex items-center gap-3">📞+91 9680088010</div>
+  <div className="flex items-center gap-3">📧 vandanaramawat04@gmail.com</div>
+  <div className="flex items-center gap-3">📍 jaipur, India</div>
 </div>
 
           </div>
@@ -33,8 +33,8 @@ const Contact = ({ contactInfo, socialLinks }) => {
           <div className="mt-6">
             <h3 className="mb-2 font-semibold">Connect With Us</h3>
             <div className="flex gap-4 text-2xl">
-               <a href={"#"} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-               <a href={"#"}><i className="fab fa-linkedin"></i><FaLinkedin /></a>
+               <a href={"https://github.com/vandana324"} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+               <a href={"https://www.linkedin.com/in/vandanavaishnav/"}><i className="fab fa-linkedin"></i><FaLinkedin /></a>
                <a href={"#"}><i className="fab fa-instagram"></i><FaInstagram /></a>
               <a href={"#"}><i className="fab fa-whatsapp"></i><FaWhatsapp /></a>
             </div>

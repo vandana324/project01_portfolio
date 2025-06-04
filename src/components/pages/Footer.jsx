@@ -9,16 +9,16 @@ const Footer = () => {
 
     {/* Personal Info */}
     <div className="w-full flex flex-col items-center px-15 lg:items-start">
-      <h2 className="text-2xl font-bold bg-gradient-to-r from-[#4081FA] to-[#FA0472] bg-clip-text text-transparent mb-2">Rahul Singh</h2>
+      <h2 className="text-2xl font-bold bg-gradient-to-r from-[#4081FA] to-[#FA0472] bg-clip-text text-transparent mb-2">Vandana Vaishnav</h2>
       <p className="text-gray-400 text-sm mb-4 text-center lg:text-left">
-        Professional Full-Stack Mobile & Web Developer providing high-quality development services and innovative solutions for your digital needs.
+        Aspiring Software Developer & Full-Stack Web Developer focused on building impactful projects and mastering modern technologies.
       </p>
       <div className="flex space-x-4">
-        <a href="#" className="hover:text-purple-500"><FaGithub /></a>
-        <a href="#" className="hover:text-purple-500"><FaLinkedin /></a>
+        <a href="https://github.com/vandana324" className="hover:text-purple-500"><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/vandanavaishnav/" className="hover:text-purple-500"><FaLinkedin /></a>
         <a href="#" className="hover:text-purple-500"><FaInstagram /></a>
         <a href="#" className="hover:text-purple-500"><FaTwitter /></a>
-        <a href="#" className="hover:text-purple-500"><FaWhatsapp /></a>
+        
       </div>
     </div>
 
@@ -52,9 +52,9 @@ const Footer = () => {
 
       <div className="flex flex-col items-center md:items-start">
         <h3 className="text-lg font-bold bg-gradient-to-r from-[#4081FA] to-[#FA0472] bg-clip-text text-transparent mb-2">Contact Us</h3>
-        <p className='text-gray-400 flex gap-1'><PhoneCall />+91 93342 74325</p>
-        <p className='text-gray-400 flex gap-1'><MessageCircle />rk9600460@gmail.com</p>
-        <p className='text-gray-400 flex gap-1'><LocateIcon />Delhi, India</p>
+        <p className='text-gray-400 flex gap-1'><PhoneCall />+91 9680088010</p>
+        <p className='text-gray-400 flex gap-1'><MessageCircle />vandanaramawat04@gmail.com</p>
+        <p className='text-gray-400 flex gap-1'><LocateIcon />Jaipur, India</p>
 
         <div className="mt-4 w-full">
           <h3 className="text-lg font-bold bg-gradient-to-r from-[#4081FA] to-[#FA0472] bg-clip-text text-transparent mb-2">Subscribe to Newsletter</h3>
@@ -72,6 +72,22 @@ const Footer = () => {
       </div>
     </div>
 
+<footer className="bg-[#151515] text-gray-300 px-6 py-6">
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+        
+        {/* Left Side */}
+        <p className="text-sm">
+          © {new Date().getFullYear()}. All rights reserved.
+        </p>
+        
+        {/* Right Side */}
+        <div className="flex gap-4 mt-2 sm:mt-0">
+          <a href="/privacy" className="hover:underline text-sm">Privacy Policy</a>
+          <a href="/terms" className="hover:underline text-sm">Terms of Use</a>
+          <a href="/contact" className="hover:underline text-sm">Contact</a>
+        </div>
+      </div>
+    </footer>
   
 </footer>
 

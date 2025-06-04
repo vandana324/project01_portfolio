@@ -1,6 +1,8 @@
-// Team.jsx
+
 import React from 'react';
 import TeamCard from '../TeamCard';
+import { LineChart } from 'lucide-react';
+import Line from '../others/line';
 
 const teamMembers = [
   {
@@ -78,8 +80,9 @@ const Team = () => {
     <section className="bg-[#1b1a1a] text-white py-20 px-4">
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold">Our Team</h2>
+        <Line />
         <p className="text-gray-300 mt-2">Meet the talented professionals behind our exceptional work. Each member brings unique expertise to deliver quality solutions.</p>
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mx-auto mt-4 rounded"></div>
+        
       </div>
  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
   {teamMembers.map((member, index) => (

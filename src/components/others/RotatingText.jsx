@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 const phrases = [
   "Full-Stack Web Developer",
-  "UI/UX Designer",
-  "React Native Developer",
-  "Mobile App Specialist",
-  "Flutter Developer"
+  "Software Developer",
+  "React Developer",
+  "Machine learning Engineer",
+  
 ];
 
 const TypingText = () => {
