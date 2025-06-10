@@ -12,7 +12,7 @@ This is my personal portfolio website to showcase my skills, projects, and journ
 ## 🛠️ How to Run Locally
 
 
--> `git clone https://github.com/vandanaramawat/portfolio.git`
+-> `git clone https://github.com/vandana324/project01_portfolio.git`
 -> `cd portfolio`
 -> `npm install`
 -> `npm run dev`
